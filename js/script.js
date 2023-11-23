@@ -14,8 +14,8 @@ const wrapperElement = document.querySelector ('div.wrapper');
 
 
 let i = 0;
-let listaSpesaItem
-while (i < listaSpesa.lenght) {
+let listaSpesaItem;
+while (i < listaSpesa.length) {
     // const writelistaSpesaItem = document.createElement('p');
     listaSpesaItem = listaSpesa[i];
     console.log(listaSpesaItem);
