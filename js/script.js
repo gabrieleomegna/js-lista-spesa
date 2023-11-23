@@ -11,14 +11,12 @@ const listaSpesa = [
 
 const wrapperElement = document.querySelector ('div.wrapper');
 
-
-
 let i = 0;
-let listaSpesaItem;
 while (i < listaSpesa.length) {
-    // const writelistaSpesaItem = document.createElement('p');
-    listaSpesaItem = listaSpesa[i];
+    const writelistaSpesaItem = document.createElement('p');
+    let listaSpesaItem = listaSpesa[i];
+    writelistaSpesaItem.innerHTML = listaSpesaItem;
     console.log(listaSpesaItem);
-    // wrapperElement.appendChild(listaSpesaItem);
+    wrapperElement.appendChild(writelistaSpesaItem);
     i = i + 1;
 }
